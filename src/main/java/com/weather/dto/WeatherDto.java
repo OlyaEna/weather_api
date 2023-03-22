@@ -1,6 +1,6 @@
 package com.weather.dto;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class WeatherDto {
+    @JsonIgnore
     private Long id;
     private Double temperature;
     private Double wind;
@@ -19,6 +20,6 @@ public class WeatherDto {
     private Double humidity;
     private String  conditions;
     private String  location;
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
+    @JsonIgnore
     private LocalDateTime createdAt;
 }

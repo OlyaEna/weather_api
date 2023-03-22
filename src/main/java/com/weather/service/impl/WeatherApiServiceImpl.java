@@ -1,10 +1,8 @@
 package com.weather.service.impl;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.weather.dto.api.WeatherApiResponseDto;
-import com.weather.model.entity.Weather;
 import com.weather.service.WeatherApiService;
-import com.weather.service.WeatherService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -15,6 +13,7 @@ import java.net.URI;
 
 
 @Service
+@Slf4j
 public class WeatherApiServiceImpl implements WeatherApiService {
 
     private @Value("${openweathermap.API.KEY}") String API_KEY;
@@ -41,8 +40,4 @@ public class WeatherApiServiceImpl implements WeatherApiService {
         }
         return response.getBody();
     }
-
-
-
-
 }
