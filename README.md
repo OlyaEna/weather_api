@@ -11,6 +11,7 @@ Java(17), Spring Framework(Boot, Data JPA), Hibernate, MySQL, Maven, Lombok, SLF
 Информация о среднесуточной температуре, рассчитанная на основании имеющихся в сервисе данных
 ![ime](https://github.com/OlyaEna/weather_api/blob/master/src/main/resources/static/img/get.JPG)
 
+<a href="https://github.com/OlyaEna/weather_api/blob/master/src/main/resources/db/migration/V1__Init_DB.sql/" target="_blank">Скрипт для создания схемы БД</a>
 <h2> Условие</h2>
 Необходимо разработать анализатор погоды. Нужно использовать сторонние API (например https://rapidapi.com/weatherapi/api/weatherapi-com). Приложение будет запрашивать погоду с заданной в настройках периодичностью по определенному городу.
 
