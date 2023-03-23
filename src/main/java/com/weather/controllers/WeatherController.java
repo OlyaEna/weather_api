@@ -4,7 +4,6 @@ import com.weather.dto.TempRequest;
 import com.weather.dto.TempResponse;
 import com.weather.dto.WeatherDto;
 import com.weather.exception.InvalidDateException;
-import com.weather.model.entity.Weather;
 import com.weather.model.repository.WeatherRepository;
 import com.weather.service.WeatherService;
 import lombok.AllArgsConstructor;

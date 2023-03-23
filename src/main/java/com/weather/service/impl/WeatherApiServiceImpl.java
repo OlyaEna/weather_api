@@ -2,7 +2,6 @@ package com.weather.service.impl;
 
 import com.weather.dto.api.WeatherApiResponseDto;
 import com.weather.service.WeatherApiService;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -13,7 +12,6 @@ import java.net.URI;
 
 
 @Service
-@Slf4j
 public class WeatherApiServiceImpl implements WeatherApiService {
 
     private @Value("${openweathermap.API.KEY}") String API_KEY;

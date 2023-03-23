@@ -31,6 +31,10 @@ public class WeatherServiceImpl implements WeatherService {
     private final WeatherApiService weatherApiService;
 
 
+    /**
+     * Запускается каждый день в 00:00, 06:00, 12:00, 18:00
+     *
+     */
     @Override
     @Scheduled(cron = "${interval-in-cron}")
     public void saveWeatherToDB() {
@@ -48,18 +52,19 @@ public class WeatherServiceImpl implements WeatherService {
         log.info("Weather saved");
     }
 
-
     @Override
     public WeatherDto findByTheLastInsert() {
-        log.info("Found by last saved response ");
-        return weatherMapper.toDto(weatherRepository.findByTheLastInsert().orElseThrow(() ->
-                new TheLastWeatherNotFoundException("weather information not found")));
+        log.info("Found by last saved response");
+
+        return  weatherMapper.toDto(weatherRepository.findByTheLastInsert().orElseThrow(() ->
+                new TheLastWeatherNotFoundException("Weather information not found")));
     }
+
 
     public List<TempResponse> findAverageDailyTemp(TempRequest tempRequest) {
         List<Double> averageTemp = weatherRepository.findAverageTemperature(tempRequest.getFrom(), tempRequest.getTo()).orElseThrow(() ->
                 new InvalidDateException("Data is incorrect"));
-        log.info("Found by saved response ");
+        log.info("Found by time span");
         return convertToResponse(averageTemp);
     }
 
