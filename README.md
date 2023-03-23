@@ -1,7 +1,8 @@
 <h1 align="center">Анализатор погоды</h1> 
 <h2> Tools</h2>
 Java(17), Spring Framework(Boot, Data JPA), Hibernate, MySQL, Maven, Lombok, SLF4J, REST, OpenWeatherMap API.
-<h2> Выполнение</h2>
+
+Выполнение
 - Дает информацию о последней записи о погоде в БД http://localhost:8080/current
 -![ime](https://github.com/OlyaEna/weather_api/blob/master/src/main/resources/static/img/current.JPG)
 - Информация о среднесуточной температуре, рассчитанная на основании имеющихся в сервисе данных (через request)
