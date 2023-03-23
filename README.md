@@ -1,7 +1,10 @@
 <h1 align="center">Анализатор погоды</h1> 
 <h2> Tools</h2>
 Java(17), Spring Framework(Boot, Data JPA), Hibernate, MySQL, Maven, Lombok, SLF4J, REST, OpenWeatherMap API.
+<h2> Условие</h2>
+<h2> </h2>
 
+<h2> Условие</h2>
 Необходимо разработать анализатор погоды. Нужно использовать сторонние API (например https://rapidapi.com/weatherapi/api/weatherapi-com). Приложение будет запрашивать погоду с заданной в настройках периодичностью по определенному городу.
 
 Как это работает:
