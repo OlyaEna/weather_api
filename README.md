@@ -3,12 +3,12 @@
 Java(17), Spring Framework(Boot, Data JPA), Hibernate, MySQL, Maven, Lombok, SLF4J, REST, OpenWeatherMap API.
 <h2> Выполнение</h2>
 - Дает информацию о последней записи о погоде в БД http://localhost:8080/current
-![image](https://github.com/OlyaEna/weather_api/blob/master/src/main/resources/static/img/current.JPG)
+-![image](https://github.com/OlyaEna/weather_api/blob/master/src/main/resources/static/img/current.JPG)
 - Информация о среднесуточной температуре, рассчитанная на основании имеющихся в сервисе данных (через request)
-![image](https://github.com/OlyaEna/weather_api/blob/master/src/main/resources/static/img/post.JPG)
+-![image](https://github.com/OlyaEna/weather_api/blob/master/src/main/resources/static/img/post.JPG)
 - Дополнительная реализация через @GetMapping
 Информация о среднесуточной температуре, рассчитанная на основании имеющихся в сервисе данных
-![image](https://github.com/OlyaEna/weather_api/blob/master/src/main/resources/static/img/get.JPG)
+-![image](https://github.com/OlyaEna/weather_api/blob/master/src/main/resources/static/img/get.JPG)
 
 <h2> Условие</h2>
 Необходимо разработать анализатор погоды. Нужно использовать сторонние API (например https://rapidapi.com/weatherapi/api/weatherapi-com). Приложение будет запрашивать погоду с заданной в настройках периодичностью по определенному городу.
