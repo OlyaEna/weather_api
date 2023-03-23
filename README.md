@@ -3,7 +3,7 @@
 Java(17), Spring Framework(Boot, Data JPA), Hibernate, MySQL, Maven, Lombok, SLF4J, REST, OpenWeatherMap API.
 
 Выполнение
-- Дает информацию о последней записи о погоде в БД http://localhost:8080/current
+- Дает информацию о последней записи о погоде в БД
 ![ime](https://github.com/OlyaEna/weather_api/blob/master/src/main/resources/static/img/current.JPG)
 - Информация о среднесуточной температуре, рассчитанная на основании имеющихся в сервисе данных (через request)
 ![ime](https://github.com/OlyaEna/weather_api/blob/master/src/main/resources/static/img/post.JPG)
