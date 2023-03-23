@@ -5,7 +5,7 @@ Java(17), Spring Framework(Boot, Data JPA), Hibernate, MySQL, Maven, Lombok, SLF
 Выполнение
 - Дает информацию о последней записи о погоде в БД
 ![ime](https://github.com/OlyaEna/weather_api/blob/master/src/main/resources/static/img/current.JPG)
-- Информация о среднесуточной температуре, рассчитанная на основании имеющихся в сервисе данных (через request)
+- Информация о среднесуточной температуре, рассчитанная на основании имеющихся в сервисе данных(через request)
 ![ime](https://github.com/OlyaEna/weather_api/blob/master/src/main/resources/static/img/post.JPG)
 - Дополнительная реализация через @GetMapping
 Информация о среднесуточной температуре, рассчитанная на основании имеющихся в сервисе данных
